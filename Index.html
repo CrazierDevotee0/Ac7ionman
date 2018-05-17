@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+ <html>
+<style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+header {background: #c90d0d;color:black;}
+body {background: #eee;color:black;}
+footer {background: #eee;color:black;}
+.nav {background:#aaa;}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration: none;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:center;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
+</style>
+   <title> The Rage Cage </title>
+  <div class="flex-container">
+  <header background="proximitty.htm">
+   <h1>
+   <strong> Welcome to the RAGE CAGE!<img src="proximitty.htm" alt="Actionman logo"> </strong>
+   </h1>
+   </header>
+      <nav class="nav">
+   <ul>
+  <li><a href="#">Twitter</a></li>
+  <li><a href="#">Twitch</a></li>
+  <li><a href="#">Youtube</a></li>
+</ul>
+</nav>
+   <body>
+   <p> Aaron aka "Ac7ionman" is the owner of the rage cage, if you dare enter be ready for high octane amazing gameplay and hilarious raging. </p>
+   <iframe src="https://player.twitch.tv/?channel=ac7ionmannn" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe><a href="https://www.twitch.tv/ac7ionmannn?tt_content=text_link&tt_medium=live_embed" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px; text-decoration:underline;">Watch live video from ac7ionmannn on www.twitch.tv</a>
+ </Body>
+ </div>
+</html>
